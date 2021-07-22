@@ -1,0 +1,12 @@
+1.在TERMINAL的位子在C:\xampp\htdocs時下git clone https://github.com/OLukeO/bus.git
+2.在TERMINAL下cd bus進到C:\xampp\htdocs\bus
+3.在TERMINAL下composer install
+4.按File->Open folder...->選C:\xampp\htdocs\bus開啟
+5.在TERMINAL下cp .env.example .env
+6.在TERMINAL下php artisan key:generate確保session、password等加密資料安全性。
+7.新增一個資料庫並且給予編輯權限
+8.到.env修改DB_DATABASE , DB_USERNAME , DB_PASSWORD
+9.在TERMINAL下php artisan migrate
+10.輸入網址http://localhost/bus/public/bus
+11.按查詢可以跳到公車查詢
+12.輸入車號和路程後按下查詢可以查詢到資料
